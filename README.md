@@ -1,2 +1,2 @@
-# Amplifier-
+# Amplifier
 Project for Musicians 🤘🎸🎶
