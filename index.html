@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--TITULO E LINK ABA-->
+  <title>Amplifier - entre ou cadastre-se</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/audio-wave.png" type="image/png">
+
+  <!--BOOTSTRAP LINK-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!--GOOGLE FONT - ORBITRON-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+  <!---------------CABEÇALHO - MENU ----------------------->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm fixed-top headercolor">
+      <div class="container py-2">
+        <a href="#">
+          <img class="logoHeader" src="https://img.icons8.com/nolan/64/audio-wave.png" />
+        </a>
+
+        <a class="navbar-brand nomelogo" href="#">Amplifier</a>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Contato</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">FAQ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--LOGIN-->
+
+  <!--------------------LOGIN---------------->
+  <section class="SectionLogin">
+
+
+    <div class="TextIntro">
+      <h1>Amplifier</h1>
+      <p>
+        Conectando músicos de diferentes lugares.
+      </p>
+    </div>
+
+    <div class="login">
+      <div class="headerlogin">
+        <img style="width: 60px" src="https://img.icons8.com/nolan/64/audio-wave.png" alt="Logo" />
+
+
+      </div>
+
+      <div class="loginInput">
+        <form class="form" id="formLogin">
+
+          <input type="text" placeholder="Usuário" id="usernameLogin" autofocus required />
+
+          <input type="password" placeholder="Senha" id="passwordLogin" required />
+
+          <br>
+          <a href="mailto:apoiandomulheres.sc@gmail.com" id="frgtPsswrd">Esqueceu a sua senha?</a>
+          <hr>
+
+      </div>
+
+
+      <button type="submit" id="btnSubmitLogin" onclick="enviar(); return false">
+        Entrar
+      </button>
+      </form>
+      <a href="index.html" style="text-decoration: none;">
+        <button id="btnSubmitSubscribe">Criar nova conta</button>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!---------------------- FOOTER ------------->
+
+  <!-- Footer -->
+  <footer class="text-center text-white footerColor" data-anime="bottom">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+
+
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <h3 style="font-family:Orbitron;">Amplifier</h3>
+        <p>
+          Conectando músicos de diferentes lugares.
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022
+      <a class="text-white" href="#">Amplifier.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+  <!-------------BOOTSTRAP SCRIPTS------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
