@@ -6,12 +6,9 @@ let pswd = document.getElementById("passwordLogin");
 
 let btnLogin = document.getElementById("btn-login");
 
-
-   
-
 function validarLogin(){
-
-btnLogin.setAttribute("href", "./social-network-template-main/social-network-template-main/index.html")
+  alert("Validando as credenciais")
+btnLogin.setAttribute("href", "./social-network-template-main/feed.html")
 
 }
 

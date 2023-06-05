@@ -2,7 +2,7 @@
 
 /*******VARIAVEIS DE CORES*******/
 :root {
-  --maincolor: rgb(7, 0, 68);
+  --maincolor: #000b4b;
   --maincolortransp: rgba(108, 0, 141, 0.548);
   --maincolor2: rgb(255, 255, 255);
   --maincolor3: rgba(87, 71, 83, 0.795);
@@ -34,9 +34,20 @@ header{
     margin-left: 20px;
     color: white;
     font-family: Orbitron;
-
+    transition: 0.5s;
   }
 
+  
+  .nomelogo:hover{
+   scale: 1.05;
+   color: white;
+  }
+
+  .nomelogo:active{
+    color: white;
+
+  
+  }
   
   .headercolor {
     background-color: var(--maincolor);
