@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,7 +28,7 @@
           <img class="logoHeader" src="https://img.icons8.com/nolan/64/audio-wave.png" />
         </a>
 
-        <a class="navbar-brand nomelogo" href="./index.html" >Amplifier</a>
+        <a class="navbar-brand nomelogo" href="./index.html">Amplifier</a>
 
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -60,10 +59,7 @@
       </div>
     </nav>
   </header>
-
-
   <!--LOGIN-->
-
   <!--------------------LOGIN---------------->
   <section class="SectionLogin">
 
@@ -79,24 +75,19 @@
       <div class="headerlogin">
         <img style="width: 60px" src="https://img.icons8.com/nolan/64/audio-wave.png" alt="Logo" />
       </div>
-
       <div class="loginInput">
-    
+        <input type="text" placeholder="Usuário" id="usernameLogin" autofocus required />
 
-          <input type="text" placeholder="Usuário" id="usernameLogin" autofocus required />
+        <input type="password" placeholder="Senha" id="passwordLogin" required />
 
-          <input type="password" placeholder="Senha" id="passwordLogin" required />
+        <br>
+        <a href="mailto:#" id="frgtPsswrd">Esqueceu a sua senha?</a>
+        <hr>
 
-          <br>
-          <a href="mailto:#" id="frgtPsswrd">Esqueceu a sua senha?</a>
-          <hr>
-
-          <a id="btn-login" href="">    
-            <button type="submit" id="btnSubmitLogin" onclick="enviar()">
-             Entrar</button> </a>
-
+        <a id="btn-login" href="">
+          <button type="submit" id="btnSubmitLogin" onclick="enviar()">
+            Entrar</button> </a>
       </div>
- 
       <a href="index.html" style="text-decoration: none;">
         <button id="btnSubmitSubscribe">Criar nova conta</button>
       </a>
@@ -112,7 +103,8 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+            class="bi bi-facebook"></i></a>
 
         <!-- Google -->
         <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
@@ -166,4 +158,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

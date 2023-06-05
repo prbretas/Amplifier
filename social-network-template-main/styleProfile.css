@@ -12,12 +12,36 @@
       text-align: left;
   }
 
-  .nomelogo{
-    margin-left: 20px;
-    color: white;
-    font-family: Orbitron;
+  .logoHeader {
+    width: 40px;
+    transition: 0.5s;
+}
 
-  }
+.logoHeader:hover {
+    scale: 1.1;
+}
+
+.nomelogo{
+  margin-left: 20px;
+  color: white;
+  font-family: Orbitron;
+  transition: 0.5s;
+}
+
+.nomelogo:hover{
+ scale: 1.05;
+ color: white;
+}
+
+.nomelogo:active{
+  color: white; 
+}
+
+.headercolor {
+  background-color: var(--maincolor);
+  color: white;
+  filter: drop-shadow(0 0 2px black);
+}
   
 .banner{
     background-image: url(img/banner.jpg);
