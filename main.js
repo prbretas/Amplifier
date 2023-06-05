@@ -1,3 +1,28 @@
+const user = "admin";
+const password = "1234";
+
+let login = document.getElementById("usernameLogin");
+let pswd = document.getElementById("passwordLogin");
+
+let btnLogin = document.getElementById("btn-login");
+
+
+   
+
+function validarLogin(){
+
+btnLogin.setAttribute("href", "./social-network-template-main/social-network-template-main/index.html")
+
+}
+
+
+function enviar(){
+  validarLogin()
+
+  }
+
+
+//----------------------- ANIME SCROLL -------------------------------------------------------------
 //Lógica
 
 // 1 - Selecionar elementos que devem ser animados
@@ -52,4 +77,5 @@ const debounce = function(func, wait, immediate) {
     animeScroll()
   }, 2));
   }
-  
+
+

@@ -8,11 +8,9 @@
   <!--TITULO E LINK ABA-->
   <title>Amplifier - entre ou cadastre-se</title>
   <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/audio-wave.png" type="image/png">
-
   <!--BOOTSTRAP LINK-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
   <!--GOOGLE FONT - ORBITRON-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,10 +19,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
-
   <!---------------CABEÇALHO - MENU ----------------------->
   <header>
     <!-- Navigation -->
@@ -88,7 +83,7 @@
       </div>
 
       <div class="loginInput">
-        <form class="form" id="formLogin">
+    
 
           <input type="text" placeholder="Usuário" id="usernameLogin" autofocus required />
 
@@ -101,10 +96,13 @@
       </div>
 
 
-      <button type="submit" id="btnSubmitLogin" onclick="enviar(); return false">
-        Entrar
+   
+        <a id="btn-login" href="">    
+           <button type="submit" id="btnSubmitLogin" onclick="enviar()">
+            Entrar</button> </a>
+     
       </button>
-      </form>
+ 
       <a href="index.html" style="text-decoration: none;">
         <button id="btnSubmitSubscribe">Criar nova conta</button>
       </a>
@@ -162,11 +160,6 @@
   <!-- Footer -->
 
 
-
-
-
-
-
   <!-------------BOOTSTRAP SCRIPTS------------------------->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -180,11 +173,6 @@
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
 
-
-
   <script src="main.js"></script>
-
-
 </body>
-
 </html>

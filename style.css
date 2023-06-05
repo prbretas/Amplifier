@@ -2,7 +2,7 @@
 
 /*******VARIAVEIS DE CORES*******/
 :root {
-  --maincolor: rgb(28, 0, 65);
+  --maincolor: rgb(7, 0, 68);
   --maincolortransp: rgba(108, 0, 141, 0.548);
   --maincolor2: rgb(255, 255, 255);
   --maincolor3: rgba(87, 71, 83, 0.795);
@@ -14,9 +14,6 @@
   --button-enviar-login: rgb(114, 100, 111);
   --button-border-login: rgb(27, 27, 27);
 }
-
-
-
 
 body{
     background-color: rgb(255, 255, 255);
@@ -37,7 +34,9 @@ header{
     margin-left: 20px;
     color: white;
     font-family: Orbitron;
+
   }
+
   
   .headercolor {
     background-color: var(--maincolor);
@@ -78,8 +77,8 @@ header{
 
     .TextIntro h1{
         font-family: Orbitron;
-        color: rgb(61, 0, 117);
-        text-shadow: 0 0 1px rgb(52, 0, 134);
+        color: rgb(21, 0, 117);
+        text-shadow: 0 0 1px rgb(0, 47, 134);
         font-size: 3em;
     }
     .TextIntro p{
@@ -166,10 +165,7 @@ hr{
         color: rgb(255, 255, 255);
         border: rgba(0, 0, 0, 0);
         filter: drop-shadow(0, 0, 15px white );
-
-  
     }  
-    
     
     #frgtPsswrd{
         color: rgb(85, 85, 255);
@@ -180,9 +176,7 @@ hr{
         }
         
         #frgtPsswrd:hover {
-      
         text-decoration:underline;
-        
         
         }
 
