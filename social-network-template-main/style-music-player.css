@@ -1,9 +1,10 @@
 
-.container {
+.containerPlayer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: auto;
   overflow: hidden;
 }
 .player {
@@ -18,11 +19,13 @@
   margin-bottom: 8px;
   text-align: center;
   color: rgb(41, 41, 41);
+  font-size: 1.3rem;
 }
 .song-author {
   margin: 0;
   color: #868686;
   text-align: center;
+  font-size: 1rem;
 }
 .player-progress {
   margin-top: 36px;
@@ -71,12 +74,12 @@
   align-items: center;
   justify-content: center;
   margin-top: 24px;
-  gap: 24px;
+  gap: 14px;
 }
 .player-buttons .btn {
   font-size: 16px;
-  width: 48px;
-  height: 48px;
+  width: 28px;
+  height: 28px;
   color: #6f7275;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   border: none;
@@ -93,29 +96,46 @@
   -webkit-text-fill-color: transparent;
 }
 .player-buttons .btn.btn-prev i {
-  display: inline-block;
-  margin-top: 2px;
-  margin-right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .player-buttons .btn.btn-play {
   font-size: 36px;
-  width: 76px;
-  height: 76px;
+  width: 44px;
+  height: 44px;
   box-shadow: 6px 6px 13px #aaaaaa, -6px -6px 13px #ffffff;
   align-items: center;
 }
 .player-buttons .btn.btn-play i {
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: 2px;
-  background: linear-gradient(to right,  #001aff, #00ffb3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+  margin-left: 3px;
+  background: linear-gradient(to right,  #6c00df, #00ffb3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .player-buttons .btn.btn-next i {
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.player-buttons .btn.btn-volume i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.player-buttons .btn.btn-repeat i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 /*********************************************/
