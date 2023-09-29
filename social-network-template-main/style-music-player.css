@@ -102,10 +102,11 @@
   width: 76px;
   height: 76px;
   box-shadow: 6px 6px 13px #aaaaaa, -6px -6px 13px #ffffff;
+  align-items: center;
 }
 .player-buttons .btn.btn-play i {
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-left: 2px;
   background: linear-gradient(to right,  #001aff, #00ffb3);
   -webkit-background-clip: text;
@@ -116,8 +117,6 @@
   margin-top: 2px;
   margin-left: 2px;
 }
-
-
 
 /*********************************************/
 .player-buttons .dropdown {
