@@ -20,6 +20,7 @@
   text-align: center;
   color: rgb(41, 41, 41);
   font-size: 1.3rem;
+  /*font-weight: bold;*/
 }
 .song-author {
   margin: 0;
@@ -113,7 +114,7 @@
   justify-content: center;
   margin-top: -1px;
   margin-left: 3px;
-  background: linear-gradient(to right,  #6c00df, #00ffb3);
+  background: linear-gradient(to top,  #6c00df, #00ffb3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -176,13 +177,47 @@
   display: block;
 }
 
+/*****************************************************************/
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {/*QUANDO A TELA ESTA FULL*/
   .player {
     width: 100%;
     box-shadow: none;
     padding: 24px;
   }
+
+  .player-buttons .btn {
+    width: 24px;
+    height: 24px;
+  }
+  .player-buttons .btn.btn-play {
+    width: 36px;
+    height: 36px;
+  }
+  .player-buttons .dropdown-content {
+    left: 4px;
+  }
+
+  .player-buttons .btn.btn-play i {
+   width: 1rem;
+    margin-top: -4px;
+    margin-left: -1.5px;
+    background: linear-gradient(to top,  #6c00df, #00ffb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/*****************************************************************/
+
+@media (max-width: 768px) { /*QUANDO A TELA ESTA PEQUENA, MOBILE*/
+  .player {
+    width: 512px;
+    box-shadow: none;
+    padding: 24px;
+  }
+
+  
   .player-buttons .btn {
     width: 42px;
     height: 42px;

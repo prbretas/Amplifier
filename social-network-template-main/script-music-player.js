@@ -52,6 +52,7 @@ const togglePlaySong = () => {
   if (audioPlayer.paused) {
     audioPlayer.play();
     btnPlayIcon.classList.replace("bi-play-fill", "bi-pause-fill");
+    btnPlayIcon.classList.toggle("btn-activated");
   } else {
     audioPlayer.pause();
     btnPlayIcon.classList.replace("bi-pause-fill", "bi-play-fill");
