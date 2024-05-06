@@ -21,7 +21,7 @@
     </style>
   <!------------------LIght BOx for Gallery-------------->
   <link rel="stylesheet" href="lightbox.min.css" />
-  <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+  
   <!------------------LIght BOx for Gallery-------------->
   <title>Amplifier - Profile</title>
   <!--GOOGLE FONT - ORBITRON-->
@@ -74,7 +74,7 @@
       <a href="notification.html" class="text-decoration-none" style="color: #cbe4f2; font-size: 22px"><i
           class="far fa-bell ml-3 d-none d-md-block"></i></a>
       <a href="./profile.html">
-        <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px" />
+        <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 imgProfile d-none d-md-block" width="32px" height="32px"/>
       </a>
     </div>
   </nav>
@@ -98,7 +98,7 @@
           <ul class="list-unstyled">
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -114,7 +114,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -131,7 +131,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -148,7 +148,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -164,7 +164,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -181,7 +181,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -197,7 +197,7 @@
             <hr class="my-3" />
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -213,7 +213,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -230,7 +230,7 @@
 
             <a href="#" class="text-decoration-none">
               <li class="media hover-media">
-                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3" />
+                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px" class="rounded-circle mr-3 imgProfile" />
 
                 <div class="media-body text-dark">
                   <h6 class="media-header">
@@ -254,9 +254,9 @@
 
   <div class="banner">
     <div class="banner-title d-flex flex-column justify-content-center align-items-center">
-      <img src="img/avatar-dhg.png" alt="img" class="rounded-circle" width="80px" height="80px" />
-      <h3 class="text-light">Dave Gamache</h3>
-      <p class="text-light">
+      <img src="img/avatar-dhg.png" alt="img" class="rounded-circle imgProfile" width="80px" height="80px" />
+      <h3 class="text-light nameProfile">Dave Gamache</h3>
+      <p class="text-light" id="textProfile">
         I wish i was a little bit taller, wish i was a baller, wish i had a
         girl… also.
       </p>
@@ -329,10 +329,13 @@
     </div>
   </div>
 
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+  <script src="./scripts/script-profile.js" defer></script>  
+  
 </body>
 
 </html>

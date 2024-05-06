@@ -25,7 +25,7 @@ const songs = [
   {
     name: "A View From the Top of the World",
     author: "Dream Theater",
-    path: "./musicas/Dream Theater - A View From the Top of the World.mp3",
+    path: "./musicas/Dream Theater - A View from the Top of the World.mp3",
   },
   {
     name: "Invisible Monster",

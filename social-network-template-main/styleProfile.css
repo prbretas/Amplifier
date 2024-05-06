@@ -12,6 +12,11 @@ body {
   text-align: left;
 }
 
+
+#right-col{
+  width: 10vw;
+}
+
 #navHeader {
   background-color: rgb(30, 0, 78);
   filter: drop-shadow(0 0 3px rgb(61, 61, 61));
@@ -124,3 +129,4 @@ body {
 #btn-foto:active{
     border: none;
 }
+
