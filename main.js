@@ -1,5 +1,5 @@
-
-
+let user = 'admin'
+let password = '1234'
 
 let login = document.getElementById("usernameLogin");
 let pswd = document.getElementById("passwordLogin");
@@ -8,7 +8,7 @@ let btnLogin = document.getElementById("btn-login");
 
 function validarLogin() {
   alert("Validando as credenciais");
-  if(login.value === user && pswd.value === password){
+  if(login === user && pswd === password){
     btnLogin.setAttribute("href", "./social-network-template-main/feed.html");
   }else{
     alert("A senha ou login estão inválidos, por favor tente novamente");
