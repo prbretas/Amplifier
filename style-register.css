@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+/*******VARIAVEIS DE CORES*******/
+:root {
+  --maincolor: #000b4b;
+  --maincolortransp: rgba(108, 0, 141, 0.548);
+  --maincolor2: rgb(255, 255, 255);
+  --maincolor3: rgba(87, 71, 83, 0.795);
+  --text-color: rgb(80, 74, 74);
+  --hovertext-color: rgb(13, 158, 255);
+  --box-bg1-color: rgb(47, 16, 68);
+  --box-bg2-color: rgba(74, 73, 75, 0.644);
+  --border-color: rgb(192, 0, 218);
+  --button-enviar-login: rgb(114, 100, 111);
+  --button-border-login: rgb(27, 27, 27);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+/*******************  HEADER  *****************************/
+header {
+  position: fixed;
+}
+
+.logoHeader {
+  width: 40px;
+}
+
+.nomelogo {
+  margin-left: 20px;
+  color: white;
+  font-family: Orbitron;
+  transition: 0.5s;
+}
+
+.nomelogo:hover {
+  scale: 1.05;
+  color: white;
+}
+
+.nomelogo:active {
+  color: white;
+}
+
+.headercolor {
+  background-color: var(--maincolor);
+  color: white;
+  filter: drop-shadow(0 0 2px black);
+}
+
+/**************** HOVER MENU *****************************/
+
+.navItemhvr {
+  color: rgb(201, 201, 201);
+}
+
+.navItemhvr:hover {
+  color: var(--hovertext-color);
+}
+
+#retMenu{
+  /*color: red;*/
+  /*background-color: rgb(0, 255, 55);*/
+  margin-left:50px; 
+
+}
+
+/********************* REGISTER ***********************/
+.SectionRegister {
+  padding: 60px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.TextIntro {
+  min-width: 430px;
+  max-width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.TextIntro h1 {
+  font-family: Orbitron;
+  color: rgb(21, 0, 117);
+  text-shadow: 0 0 1px rgb(0, 47, 134);
+  font-size: 3em;
+}
+.TextIntro p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.register {
+  max-width: 400px;
+  min-width: 400px;
+
+  border-radius: 8px;
+  margin: 30px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+  padding-bottom: 20px;
+}
+/*logo do cabeçalho do registro*/
+.register img {
+  width: 150px;
+  display: block;
+  margin: 10px auto;
+}
+
+hr {
+  width: 85%;
+  margin-left: 30px;
+}
+
+.register input {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  display: block;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  height: 3rem;
+  width: 75%;
+  padding-left: 10px;
+  margin: 5px auto;
+  color: #000;
+  background-color: white;
+  outline: none;
+
+}
+
+.register input[type="password"] {
+  margin-top: 10px;
+}
+
+.register::placeholder {
+  font-size: 1rem;
+  color: #000;
+}
+
+.register input:hover {
+  transition: 0.5s;
+  border: 1.4px solid rgb(41, 41, 184);
+}
+
+#btnSubmitRegister {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 78%;
+  background-color: rgb(7, 203, 59);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: 0px solid var(--button-border-login);
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+
+#btnSubmitRegister:hover {
+  background-color: rgb(7, 161, 48);
+  color: rgb(255, 255, 255);
+  border: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0, 0, 15px white);
+}
+
+#btnSubmitRegister:active {
+  background-color: rgb(96, 172, 116);
+
+}
+
+#frgtPsswrd {
+  color: rgb(85, 85, 255);
+  font-size: 0.9rem;
+  margin: 0 50px;
+  transition: 0.2s;
+}
+
+#frgtPsswrd:hover {
+  text-decoration: underline;
+}
+
+#aceiteTermos {
+  color: rgb(85, 85, 255);
+  font-size: 0.9rem;
+  margin: 0 50px;
+  transition: 0.2s;
+}
+
+#aceiteTermos:hover {
+  text-decoration: underline;
+}
+
+#btnSubmitSubscribe {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 50%;
+  background-color: rgb(0, 178, 223);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: 0px solid var(--button-border-login);
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+
+#btnSubmitSubscribe:hover {
+  background-color: rgb(0, 131, 207);
+  color: rgb(255, 255, 255);
+  border: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0, 0, 15px white);
+}
+
+.footerColor {
+  background-color: var(--maincolor);
+}
+
+.btn-icons {
+  background-color: white;
+  border-radius: 100px;
+  transition: 0.5s;
+  border:none;
+}
+
+.btn-icons:hover {
+  scale: 1.05;
+  background-color: rgb(213, 213, 213);
+  filter: drop-shadow(0 0 3px rgb(219, 219, 219));
+}
+
+#aceite{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#checkbox{
+  width: 16px;
+  margin-right: -45px;
+
+}
+/******************ANIMAÇÕES********************/
+
+/*TRANSLATE 3D*/
+/*** Obs:
+- Eixo X (Horizontal)
+- Eixo Y (Vertical)
+- Eixo Z (3D) **/
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-30px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(10px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -30px, 0);
+}
+
+[data-anime="bottom"] {
+  transform: translate3d(0, 30px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

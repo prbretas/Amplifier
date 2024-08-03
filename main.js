@@ -1,23 +1,23 @@
-const user = "admin";
-const password = "1234";
+
+
 
 let login = document.getElementById("usernameLogin");
 let pswd = document.getElementById("passwordLogin");
 
 let btnLogin = document.getElementById("btn-login");
 
-function validarLogin(){
-  alert("Validando as credenciais")
-btnLogin.setAttribute("href", "./social-network-template-main/feed.html")
-
+function validarLogin() {
+  alert("Validando as credenciais");
+  if(login.value === user && pswd.value === password){
+    btnLogin.setAttribute("href", "./social-network-template-main/feed.html");
+  }else{
+    alert("A senha ou login estão inválidos, por favor tente novamente");
+  }
 }
 
-
-function enviar(){
-  validarLogin()
-
-  }
-
+function enviar() {
+  validarLogin();
+}
 
 //----------------------- ANIME SCROLL -------------------------------------------------------------
 //Lógica
@@ -31,48 +31,45 @@ function enviar(){
 // 4 - Ativar a função de animação toda vez que o usuário ultilizar o scroll
 // 5 - Otimizar ativação
 
-
 //DEBOUNCE DO LODASH
 
-const debounce = function(func, wait, immediate) {
-    let timeout;
-    return function(...args) {
+const debounce = function (func, wait, immediate) {
+  let timeout;
+  return function (...args) {
     const context = this;
-    const later = function() {
-    timeout = null;
-    if (!immediate) func.apply(context, args) ;
-      };
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
     const callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callNow) func.apply (context, args);
-    };
+    if (callNow) func.apply(context, args);
   };
-  
-  
-  const target = document.querySelectorAll('[data-anime]')
-  const animationClass = 'animate'
-  
-  function animeScroll() {
-    const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4
-  
-    target.forEach(function (element) {
-      if (windowTop > element.offsetTop) {
-        element.classList.add(animationClass)
-      } else {
-        element.classList.remove(animationClass)
-      }
-    })
-  }
-  
-  animeScroll();
-  
-  
-  if(target.length) {
-  
-  window.addEventListener('scroll', debounce(function () {
-    animeScroll()
-  }, 2));
-  }
+};
 
+const target = document.querySelectorAll("[data-anime]");
+const animationClass = "animate";
 
+function animeScroll() {
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+
+  target.forEach(function (element) {
+    if (windowTop > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  });
+}
+
+animeScroll();
+
+if (target.length) {
+  window.addEventListener(
+    "scroll",
+    debounce(function () {
+      animeScroll();
+    }, 2)
+  );
+}

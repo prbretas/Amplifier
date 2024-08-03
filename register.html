@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--TITULO E LINK ABA-->
+  <title>Amplifier - entre ou cadastre-se</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/audio-wave.png" type="image/png" />
+  <!--BOOTSTRAP LINK-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style-register.css" />
+  <!--GOOGLE FONT - ORBITRON-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <!------------------GOOGLE FONTS - Poiret -------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!---------------CABEÇALHO - MENU ----------------------->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm fixed-top headercolor">
+      <div class="container py-2">
+        <a href="./index.html">
+          <img class="logoHeader" src="https://img.icons8.com/nolan/64/audio-wave.png" />
+        </a>
+
+        <a class="navbar-brand nomelogo" href="./index.html">Amplifier</a>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Contato</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">FAQ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navItemhvr" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Register-->
+  <!--------------------Register page ---------------->
+  <section class="SectionRegister">
+    <div class="TextIntro">
+      <h1>Amplifier</h1>
+      <p>Conectando músicos de diferentes lugares.</p>
+    </div>
+
+    <div class="register">
+      <div class="headerRegister">
+        <img style="width: 60px" src="https://img.icons8.com/nolan/64/audio-wave.png" alt="Logo" />
+      </div>
+      <a href="./index.html" id="retMenu">Voltar para o Login</a>
+      <div class="registerInput">
+        <form id="formRegister" action="">
+          <input type="text" placeholder="Usuário" id="userNameProfile" autofocus required />
+          <input type="text" placeholder="Nome" id="firstNameProfile" autofocus required />
+          <input type="text" placeholder="Sobrenome" id="lastNameProfile" autofocus required />
+          <input type="text" placeholder="Email" id="emailProfile" autofocus required />
+          <input type="password" placeholder="Senha" id="passWordProfile" required />
+          <input type="password" placeholder="Repita a Senha" id="passWord2Profile" required />
+          <br />
+          <div id="aceite">
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <a href="#" id="aceiteTermos">Eu li e concordo com os termos e condições</a>
+          </div>
+          
+          <hr />
+        </div>
+      
+          <button id="btnSubmitRegister" onclick="">Cadastre-se</button>
+      
+      </form>
+    </div>
+  </section>
+  <!---------------------- FOOTER ------------->
+
+  <!-- Footer -->
+  <footer class="text-center text-white footerColor" data-anime="bottom">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1 btn-icons" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+            <path fill="#3F51B5"
+              d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+            </path>
+            <path fill="#FFF"
+              d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z">
+            </path>
+          </svg></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1 btn-icons" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+            <path fill="#fbc02d"
+              d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+            </path>
+            <path fill="#e53935"
+              d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+            </path>
+            <path fill="#4caf50"
+              d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+            </path>
+            <path fill="#1565c0"
+              d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+            </path>
+          </svg></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1 btn-icons" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48">
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#fd5"></stop>
+              <stop offset=".328" stop-color="#ff543f"></stop>
+              <stop offset=".348" stop-color="#fc5245"></stop>
+              <stop offset=".504" stop-color="#e64771"></stop>
+              <stop offset=".643" stop-color="#d53e91"></stop>
+              <stop offset=".761" stop-color="#cc39a4"></stop>
+              <stop offset=".841" stop-color="#c837ab"></stop>
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+              d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+            </path>
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+              gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#4168c9"></stop>
+              <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+              d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+            </path>
+            <path fill="#fff"
+              d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+            </path>
+            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+            <path fill="#fff"
+              d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+            </path>
+          </svg></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <h3 style="font-family: Orbitron">Amplifier</h3>
+        <p>Conectando músicos de diferentes lugares.</p>
+      </section>
+      <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022
+      <a class="text-white" href="#">Amplifier.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-------------BOOTSTRAP SCRIPTS------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+  <script src="./main.js" defer></script>
+  <script src="./script-cadamp.js" defer ></script>
+</body>
+
+</html>
